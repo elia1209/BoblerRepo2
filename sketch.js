@@ -1,25 +1,16 @@
-
-let ocean;
-
-function preload(){
-    ocean = loadImage("ocean.jpg");
-}
-
 let bobles = [];
 
 function setup() {
-    createCanvas(800, 800);
-    image(ocean, 0, 0, width, height);
-    for(let i; i < 15; i++){
-    bobles.push(new boble())
+  createCanvas(400, 400);
+  for (let i = 0; i < 15; i++) {
+    bobles.push(new boble());
+  }
 }
 
+function draw() {
+  background(0,0,0,70);
+  for (let bobler of bobles) {
+    bobler.move();
+    bobler.display();
   }
-  
-  function draw(){ 
-    for(let bobler of bobles){
-      bobler.move();
-      bobler.display();
-    }
-  }
-  
+}
