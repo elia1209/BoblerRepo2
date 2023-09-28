@@ -18,8 +18,8 @@ function setup() {
   
   function draw(){ 
     for(let bobler of bobles){
-      bobler.move
-      bobler.display
+      bobler.move();
+      bobler.display();
     }
   }
   
