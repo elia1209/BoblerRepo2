@@ -16,9 +16,10 @@ function setup() {
 
   }
   
-  function draw() 
+  function draw(){ 
     for(let bobler of bobles){
       move.boble
       display.boble
     }
+  }
   
